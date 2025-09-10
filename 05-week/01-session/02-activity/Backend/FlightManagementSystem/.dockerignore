@@ -1,0 +1,7 @@
+target/
+.git
+.vscode
+.idea
+*.log
+README.md
+manual/screenshots/
