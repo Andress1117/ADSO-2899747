@@ -7,7 +7,18 @@ public class ContinentDTO {
     private String name;
     private String description;
 
-    // getters y setters
+    // Constructor vacío
+    public ContinentDTO() {}
+
+    // Constructor con todos los campos
+    public ContinentDTO(String id, String code, String name, String description) {
+        this.id = id;
+        this.code = code;
+        this.name = name;
+        this.description = description;
+    }
+
+    // Getters y setters
     public String getId() {
         return id;
     }
@@ -38,5 +49,16 @@ public class ContinentDTO {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    // Método toString opcional
+    @Override
+    public String toString() {
+        return "ContinentDTO{" +
+                "id='" + id + '\'' +
+                ", code='" + code + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

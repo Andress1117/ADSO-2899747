@@ -40,4 +40,10 @@ public class ContinentServiceImpl implements IContinentService {
     public void delete(String id) {
         repository.deleteById(id);
     }
+
+    @Override
+    public ContinentDTO findByCoordinates(Double lat, Double lng) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findByCoordinates'");
+    }
 }

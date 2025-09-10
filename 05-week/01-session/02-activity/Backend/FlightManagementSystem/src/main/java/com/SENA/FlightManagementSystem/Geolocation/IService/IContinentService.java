@@ -10,4 +10,5 @@ public interface IContinentService {
     ContinentDTO findById(String id);
     ContinentDTO save(ContinentDTO dto);
     void delete(String id);
+    ContinentDTO findByCoordinates(Double lat, Double lng);
 }

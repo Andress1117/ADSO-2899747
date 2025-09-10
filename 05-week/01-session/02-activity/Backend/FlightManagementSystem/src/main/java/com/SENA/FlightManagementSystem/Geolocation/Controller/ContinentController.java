@@ -20,6 +20,12 @@ public class ContinentController {
         return service.findAll();
     }
 
+    @GetMapping("/by-coordinates")
+    public ContinentDTO findByCoordinates(@RequestParam Double lat, @RequestParam Double lng) {
+        // Tu lógica para determinar continente por coordenadas
+        return service.findByCoordinates(lat, lng);
+    }
+
     @GetMapping("/{id}")
     public ContinentDTO findById(@PathVariable String id) {
         return service.findById(id);
